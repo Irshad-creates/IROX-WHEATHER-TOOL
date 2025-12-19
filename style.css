@@ -133,9 +133,19 @@ body {
 .app-container .main-container .main-area .current-wheather {
   height: 20rem;
   width: 100%;
-  background-color: #353535;
+  background-color: #0d0c0c;
   border-radius: 10px;
   padding: 1rem;
+}
+.app-container .main-container .main-area .current-wheather .current-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-container .main-container .main-area .current-wheather .current-upper .CU-location {
+  display: flex;
+  align-items: center;
+  background-color: #353535;
 }
 .app-container .main-container .main-area .current-wheather .current-middle {
   margin-top: 1.5rem;

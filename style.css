@@ -146,6 +146,16 @@ body {
   display: flex;
   align-items: center;
   background-color: #353535;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.app-container .main-container .main-area .current-wheather .current-upper .CU-date {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #ccc;
+  background-color: #353535;
+  padding: 5px 5px;
+  border-radius: 5px;
 }
 .app-container .main-container .main-area .current-wheather .current-middle {
   margin-top: 1.5rem;
@@ -153,21 +163,41 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.app-container .main-container .main-area .current-wheather .CU-date {
-  text-align: right;
-  font-size: 0.8rem;
-  color: #ccc;
-}
-.app-container .main-container .main-area .current-wheather .CU-temp h1 {
+.app-container .main-container .main-area .current-wheather .current-middle .CU-temp .CU-temp h1 {
   font-size: 3rem;
 }
-.app-container .main-container .main-area .current-wheather #condition {
+.app-container .main-container .main-area .current-wheather .current-middle .CU-temp #condition {
   font-size: 0.9rem;
   color: #ccc;
 }
-.app-container .main-container .main-area .current-wheather .CU-icon img {
-  width: 80px;
-  height: 80px;
+.app-container .main-container .main-area .current-wheather .current-middle .mid-info {
+  display: flex;
+  flex-direction: column;
+}
+.app-container .main-container .main-area .current-wheather .current-middle .mid-info .humidity {
+  display: flex;
+  gap: 0.2rem;
+  color: #7f7f7f;
+}
+.app-container .main-container .main-area .current-wheather .current-middle .mid-info .humidity p {
+  color: rgb(64, 112, 62);
+}
+.app-container .main-container .main-area .current-wheather .current-middle .mid-info .windflow {
+  display: flex;
+  gap: 0.2rem;
+  color: #7f7f7f;
+}
+.app-container .main-container .main-area .current-wheather .current-middle .mid-info .windflow p {
+  color: rgb(90, 138, 185);
+}
+.app-container .main-container .main-area .current-wheather .current-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container .main-container .main-area .current-wheather .current-bottom .CU-icon img {
+  width: 150px;
+  height: 150px;
 }
 
 @media (min-width: 1024px) {

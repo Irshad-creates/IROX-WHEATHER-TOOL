@@ -161,15 +161,25 @@ body {
         border-radius: 10px;
         padding: 1rem;
 
-        .current-upper{
+        .current-upper {
           display: flex;
           justify-content: space-between;
           align-items: center;
 
-          .CU-location{
+          .CU-location {
             display: flex;
             align-items: center;
-            background-color: #353535
+            background-color: #353535;
+            padding: 5px 5px;
+            border-radius: 5px;
+          }
+          .CU-date {
+            text-align: right;
+            font-size: 0.8rem;
+            color: #ccc;
+            background-color: #353535;
+            padding: 5px 5px;
+            border-radius: 5px;
           }
         }
 
@@ -178,26 +188,53 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          .CU-temp{
+            
+
+            .CU-temp h1 {
+              font-size: 3rem;
+            }
+  
+            #condition {
+              font-size: 0.9rem;
+              color: #ccc;
+              
+            }
+          }
+
+
+          .mid-info{
+            display: flex;
+            flex-direction: column;
+
+            .humidity{
+              display: flex;
+              gap: 0.2rem;
+              color: #7f7f7f;
+              p{
+                color: rgb(64, 112, 62);
+              }
+            }
+            .windflow{
+              display: flex;
+              gap: 0.2rem;
+              color: #7f7f7f;
+              p{
+                color: rgb(90, 138, 185);
+              }
+            }
+          }
         }
 
-        .CU-date {
-          text-align: right;
-          font-size: 0.8rem;
-          color: #ccc;
-        }
-
-        .CU-temp h1 {
-          font-size: 3rem;
-        }
-
-        #condition {
-          font-size: 0.9rem;
-          color: #ccc;
-        }
-
-        .CU-icon img {
-          width: 80px;
-          height: 80px;
+        .current-bottom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .CU-icon img {
+            width: 150px;
+            height: 150px;
+          }
         }
       }
     }

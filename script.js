@@ -14,8 +14,7 @@ async function getweather(city) {
   console.log(data);
 
   // current-upper UI
-  document.getElementById("CUL-place").innerHTML =
-    data.location.name;
+  document.getElementById("CUL-place").innerHTML = data.location.name;
 
   // 👇 YAHAN TU KHUD DAY / DATE / MONTH LOGIC DALEGA
   // document.getElementById("day").innerHTML = ???
@@ -24,8 +23,13 @@ async function getweather(city) {
   document.getElementById("temp").innerText =
     Math.round(data.current.temp_c) + "°C";
 
-  document.getElementById("condition").innerText =
-    data.current.condition.text;
+  document.getElementById("humidity-l").innerText =
+    Math.round(data.current.humidity) + "%";
+
+  document.getElementById("wind-f").innerText =
+    Math.round(data.current.wind_kph) + " Kph";
+
+  document.getElementById("condition").innerText = data.current.condition.text;
 
   document.getElementById("weather-icon").src =
     "https:" + data.current.condition.icon;
